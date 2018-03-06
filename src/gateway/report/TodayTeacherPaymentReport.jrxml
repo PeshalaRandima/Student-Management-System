@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="Teacher" class="java.lang.String"/>
+	<field name="Total Amount" class="java.lang.String"/>
+	<field name="Teacher&apos;s amount" class="java.lang.String"/>
+	<field name="Institute amount" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="31" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Teacher]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="142" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Teacher's amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="41" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Institute amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="50">
+			<textField>
+				<reportElement x="31" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Teacher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="142" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Total Amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Teacher's amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="7" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{Institute amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
